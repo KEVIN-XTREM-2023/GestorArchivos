@@ -1,0 +1,81 @@
+sp_insertarUsuario
+
+USE `filesystem`;
+DROP procedure IF EXISTS `sp_insertarUsuario`;
+
+DELIMITER $$
+USE `filesystem`$$
+CREATE PROCEDURE `sp_insertarUsuario` (in nombreP varchar(100),
+										in usuarioP varchar(100),
+										in contraseniaP varchar(100),
+										in tipoP int)
+BEGIN
+	insert into users (name,username, password, type) values(nombreP,usuarioP,contraseniaP,tipoP);
+END$$
+
+DELIMITER ;
+
+------------------------------------------------------------------------
+
+DROP procedure IF EXISTS `sp_actualizarUsuario`;
+
+DELIMITER $$
+USE `filesystem`$$
+CREATE PROCEDURE `sp_actualizarUsuario` (in idP int,
+										in nombreP varchar(100),
+                                        in usuarioP varchar(100),
+										in contraseniaP varchar(100),
+										in tipoP int)
+BEGIN
+		update users set name=nombreP,
+						 username=usuarioP,
+                         password=contraseniaP,
+						type=tipoP
+                        where id=idP;
+END$$
+
+DELIMITER ;
+-------------------------------------------------------------------------
+DROP procedure IF EXISTS `sp_eliminarUsuario`;
+
+DELIMITER $$
+USE `filesystem`$$
+CREATE PROCEDURE `sp_eliminarUsuario` (in idP int)
+BEGIN
+	delete from users where id = idP;
+END$$
+
+DELIMITER ;
+
+
+
+----------------------------
+DROP procedure IF EXISTS `sp_mostrarUsuarios`;
+
+DELIMITER $$
+USE `filesystem`$$
+CREATE PROCEDURE `sp_mostrarUsuarios` ()
+BEGIN
+    SELECT id,name,username
+		FROM users
+		ORDER BY name ASC;
+        
+END$$
+
+DELIMITER ;
+--------------------
+Vistas
+create 	view users_view AS
+SELECT * FROM users;
+
+
+SELECT * FROM users_view;
+create 	view folders_view AS
+SELECT * FROM folders;
+
+
+create 	view files_view AS
+SELECT * FROM files;
+
+
+
