@@ -1,4 +1,4 @@
-# SISTEMA GESTIÓN DE CARPETAS Y ARCHIVOS/DOCUMENTO
+# Sistema de gestión de archivos y carpetas
 
 
 
@@ -39,7 +39,7 @@ ampliamente utilizado.
 <img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/mysqlworkbench_93532.png" alt="VB." width="200">
 </center>
 
-El sistema fue implementado en Matlab porque ya venían integrado las herramientas necesarios para este proyecto.
+El sistema fue implementado en PHP y visual studio code porque ya venían integrado las herramientas necesarios para este proyecto.
 
 
 
@@ -83,7 +83,27 @@ Ultimas versiones en los para no tener problemas de compatibilidad.
 -   Abre un navegador web y accede a http://localhost/. Si todo está configurado correctamente, deberías ver la página de inicio de XAMPP.
 
 
+## Instalación de MySQL Workbench
+1.  Descargar MySQL Workbench
 
+- Visita el sitio web oficial de MySQL para descargar MySQL Workbench: Descargar MySQL Workbench
+
+
+2.  Instalar MySQL Workbench
+
+- Ejecuta el instalador descargado.
+Sigue las instrucciones del asistente de instalación.
+Durante la instalación, puedes elegir instalar MySQL Server y otras herramientas, o solo instalar MySQL Workbench.
+
+3. Una vez que MySQL Workbench esté instalado, ábrelo y sigue estos pasos para configurarlo:
+
+- Conectar a un servidor MySQL:
+- Probar la conexión 
+- Guardar la conexión
+- Abrir una conexión
+
+
+Haz doble clic en la conexión que acabas de crear para conectarte al servidor MySQL.
 ## Anexos
 ### Inicio de Sesión
 
