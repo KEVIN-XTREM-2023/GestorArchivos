@@ -1,4 +1,4 @@
-# Sistema de gestión de archivos y carpetas
+# SISTEMA GESTIÓN DE CARPETAS Y ARCHIVOS/DOCUMENTO
 
 
 
@@ -121,3 +121,6 @@ Haz doble clic en la conexión que acabas de crear para conectarte al servidor M
 
 ### Archivos compartidos
 ![Login.](https://github.com/Kevin-Saquinga/ImagenesGit/blob/main/10.png?raw=true)
+
+### Base de datos 
+![Login.](https://github.com/Kevin-Saquinga/ImagenesGit/blob/main/11.png?raw=true)
